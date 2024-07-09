@@ -1,6 +1,6 @@
 # Quant-Investing
 
-![image](https://github.com/1exedra/Quant-Investing/assets/171572078/e716cc3e-b55f-4d60-b966-60d541caa0d7)
+![image](https://github.com/1exedra/Quant-Investing/assets/171572078/a32e15cc-9591-4187-aa20-682a8d7f50d2)
 
 
 
