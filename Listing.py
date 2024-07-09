@@ -15,3 +15,8 @@ data = yf.download(tickers, start=start_date, end=end_date)['Adj Close']
 data.dropna(axis=1, inplace=True)
 one_year_returns = (data.iloc[-1] - data.iloc[0]) / data.iloc[0]
 top_50_stocks = one_year_returns.nlargest(50)
+
+portfolio_size = float(input("Enter the size of your portfolio in USD: "))
+equal_weight = portfolio_size / 50
+prices = data.iloc[-1][top_50_stocks.index]
+num_shares = (equal_weight // prices).astype(int)
