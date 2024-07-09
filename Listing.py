@@ -31,3 +31,11 @@ portfolio = pd.DataFrame({
     'Investment': num_shares.values * prices.values
 })
 print(portfolio)
+
+plt.figure(figsize=(14, 7))
+top_50_stocks.plot(kind='bar', title='Top 50 Stocks by 1-Year Price Momentum')
+plt.xlabel('Stock')
+plt.ylabel('1-Year Return')
+plt.grid(True)
+plt.show()
+
