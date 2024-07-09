@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+pd.options.display.float_format = '{:.6f}'.format
+
 url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
 table = pd.read_html(url)
 sp500 = table[0]
