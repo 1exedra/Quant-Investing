@@ -20,3 +20,14 @@ portfolio_size = float(input("Enter the size of your portfolio in USD: "))
 equal_weight = portfolio_size / 50
 prices = data.iloc[-1][top_50_stocks.index]
 num_shares = (equal_weight // prices).astype(int)
+
+prices = data.iloc[-1][top_50_stocks.index]
+num_shares = (equal_weight // prices).astype(int)
+portfolio = pd.DataFrame({
+    'Stock': top_50_stocks.index,
+    '1-Year Return': top_50_stocks.values,
+    'Price': prices.values,
+    'Shares to Buy': num_shares.values,
+    'Investment': num_shares.values * prices.values
+})
+print(portfolio)
